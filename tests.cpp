@@ -31,6 +31,7 @@ TEST_CASE("Count Primes Cases")
 {
     CHECK(countPrimes(-111111, 2) == 1);
     CHECK(countPrimes(1, 100) == 25);
+    CHECK(countPrimes(100, 1) == 25);
     CHECK(countPrimes(150, 188) == 7);
 }
 
@@ -47,4 +48,12 @@ TEST_CASE("Next Twin Prime Cases")
     CHECK(nextTwinPrime(0) == 3);
     CHECK(nextTwinPrime(-135267) == 3);
     CHECK(nextTwinPrime(180) == 181);
+}
+
+TEST_CASE("Largest Twin Prime Cases")
+{
+    CHECK(largestTwinPrime(-100000, 2) == -1);
+    CHECK(largestTwinPrime(0, 100) == 73);
+    CHECK(largestTwinPrime(100, 0) == 73);
+    CHECK(largestTwinPrime(52, 198) == 197);
 }
