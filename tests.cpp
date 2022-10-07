@@ -33,3 +33,18 @@ TEST_CASE("Count Primes Cases")
     CHECK(countPrimes(1, 100) == 25);
     CHECK(countPrimes(150, 188) == 7);
 }
+
+TEST_CASE("Is Twin Prime Cases")
+{
+    CHECK(isTwinPrime(15) == false);
+    CHECK(isTwinPrime(19) == true);
+    CHECK(isTwinPrime(37) == false);
+    CHECK(isTwinPrime(2) == false);
+}
+
+TEST_CASE("Next Twin Prime Cases")
+{
+    CHECK(nextTwinPrime(0) == 3);
+    CHECK(nextTwinPrime(-135267) == 3);
+    CHECK(nextTwinPrime(180) == 181);
+}
