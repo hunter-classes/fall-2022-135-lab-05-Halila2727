@@ -99,3 +99,28 @@ int nextTwinPrime(int n)
     }
     return -1;
 }
+
+int largestTwinPrime(int a, int b)
+{
+    int larger, smaller;
+    
+    if(a > b)
+    {
+        larger = a;
+        smaller = b;
+    }
+    else
+    {
+        larger = b;
+        smaller = a;
+    }
+
+    for(int i = larger; i >= smaller; i--)
+    {
+        if(isTwinPrime(i) == true)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
