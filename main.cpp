@@ -35,5 +35,9 @@ int main()
   std::cout << "\nnextTwinPrime() function:\n14 | 5329\n";
   std::cout << nextTwinPrime(14) << " | " << nextTwinPrime(5329);
   std::cout << "\n------------------\n";
+
+  std::cout << "\nlargestTwinPrime() function:\n1 to 100\n";
+  std::cout << largestTwinPrime(1, 100);
+  std::cout << "\n------------------\n";
   return 0;
 }
