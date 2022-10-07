@@ -71,3 +71,31 @@ int countPrimes(int a, int b)
     }
     return count;
 }
+
+bool isTwinPrime(int n)
+{
+    if(isPrime(n) == false)
+    {
+        return false;
+    }
+    else
+    {
+        if(isPrime(n-2) == true || isPrime(n+2) == true)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+int nextTwinPrime(int n)
+{
+    for(int i = n+1; i < 2147483647; i++)
+    {
+        if(isTwinPrime(i) == true)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
