@@ -27,5 +27,13 @@ int main()
   std::cout << "\ncountPrimes() function:\n1 to 100\n";
   std::cout << countPrimes(1, 100);
   std::cout << "\n------------------\n";
+
+  std::cout << "\nisTwinPrime() function:\n29 | 37\n";
+  std::cout << isTwinPrime(29) << " | " << isTwinPrime(37);
+  std::cout << "\n------------------\n";
+
+  std::cout << "\nnextTwinPrime() function:\n14 | 5329\n";
+  std::cout << nextTwinPrime(14) << " | " << nextTwinPrime(5329);
+  std::cout << "\n------------------\n";
   return 0;
 }
