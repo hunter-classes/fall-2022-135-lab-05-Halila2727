@@ -18,4 +18,4 @@ tests.o: tests.cpp doctest.h funcs.h
 	g++ $(CIXXFLAGS) -c tests.cpp doctest.h funcs.h
 
 clean:
-	rm -f main.o funcs.o tests.o
+	rm -f main.o funcs.o tests.o doctest.h.gch funcs.h.gch
