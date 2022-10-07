@@ -15,5 +15,17 @@ int main()
   std::cout << "\nisDivisibleBy() function:\n12 divided by 3\n";
   std::cout << isDivisibleBy(12, 3);
   std::cout << "\n------------------\n";
+
+  std::cout << "\nisPrime() function:\n14 | 19\n";
+  std::cout << isPrime(14) << " | " << isPrime(19);
+  std::cout << "\n------------------\n";
+
+  std::cout << "\nnextPrime() function:\n14 | 5329\n";
+  std::cout << nextPrime(14) << " | " << nextPrime(5329);
+  std::cout << "\n------------------\n";
+
+  std::cout << "\ncountPrimes() function:\n1 to 100\n";
+  std::cout << countPrimes(1, 100);
+  std::cout << "\n------------------\n";
   return 0;
 }
